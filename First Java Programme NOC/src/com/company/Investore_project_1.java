@@ -1,0 +1,53 @@
+package com.company;
+import java.util.Scanner;
+public class Investore_project_1 {
+    public static void main(String[] args) {
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("Enter your Name...");
+        String name1 = sc1.nextLine();
+        System.out.println("Enter your Amount to invest");
+        int investor1 = sc1.nextInt();
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Enter your Name...");
+        String name2 = sc2.nextLine();
+        System.out.println("Enter your Amount to invest");
+        int investor2 = sc2.nextInt();
+        Scanner sc3 = new Scanner(System.in);
+        System.out.println("Enter your Name...");
+        String name3 = sc3.nextLine();
+        System.out.println("Enter your Amount to invest");
+        int investor3 = sc3.nextInt();
+        Scanner sc4 = new Scanner(System.in);
+        System.out.println("Enter your Name...");
+        String name4 = sc4.nextLine();
+        System.out.println("Enter your Amount to invest");
+        int investor4 = sc4.nextInt();
+        Scanner sc5 = new Scanner(System.in);
+        System.out.println("Enter your Name...");
+        String name5 = sc5.nextLine();
+        System.out.println("Enter your Amount to invest");
+        int investor5 = sc5.nextInt();
+        int totalInvest = investor1 + investor2 + investor3 + investor4 + investor5;
+        System.out.println("Total Invest On This App: $ " + totalInvest);
+        Scanner sc6 = new Scanner(System.in);
+        System.out.println("Enter yearly profit..");
+        int profit = sc6.nextInt();
+        int sum = totalInvest + profit;
+        System.out.println("Total Invest + Total profit is: $ " + sum);
+        double divide = sum / 33;
+        double totalMoney = divide + investor1;
+        System.out.println("for per user profit is: " + divide + " $");
+        System.out.println("investor details");
+        System.out.println("Investor-1");
+        System.out.println("your Name is: " + name1 + "\n" + name1 + " profit is: " + divide + "$ " + "\nYour Invest On This $ " + investor1 + "\nYour total money is: " + totalMoney + "$");
+        System.out.println("Investor-2");
+        System.out.println("your Name is: " + name2 + "\n" + name2 + " profit is: " + divide + "$ " + "\nYour Invest On This $ " + investor2 + "\nYour total money is: " + totalMoney + "$");
+        System.out.println("Investor-3");
+        System.out.println("your Name is: " + name3 + "\n" + name3 + " profit is: " + divide + "$ " + "\nYour Invest On This $ " + investor3 + "\nYour total money is: " + totalMoney + "$");
+        System.out.println("Investor-4");
+        System.out.println("your Name is: " + name4 + "\n" + name4 + " profit is: " + divide + "$ " + "\nYour Invest On This $ " + investor4 + "\nYour total money is: " + totalMoney + "$");
+        System.out.println("Investor-5");
+        System.out.println("your Name is: " + name5 + "\n" + name5 + " profit is: " + divide + "$ " + "\nYour Invest On This $ " + investor5 + "\nYour total money is: " + totalMoney + "$");
+        System.out.println("hope Allah give success on this project if allah want..");
+    }
+}
