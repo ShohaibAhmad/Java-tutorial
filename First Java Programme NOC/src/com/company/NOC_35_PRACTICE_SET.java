@@ -24,6 +24,17 @@ public class NOC_35_PRACTICE_SET {
          }
         }
 
+        static void pattern1rec(int n){
+            if (n>0){
+                pattern1rec(n-1);
+                for (int i =0;i<n;i++){
+                    System.out.print(" * ");
+                }
+                System.out.println();
+            }
+
+        }
+
 
         static int sumr(int n){
          if (n==1){
@@ -31,6 +42,22 @@ public class NOC_35_PRACTICE_SET {
          }
          return n+sumr(n-1);
         }
+
+
+        static int fib(int n){
+         if (n==1){
+             return 0;
+         }
+         else if (n==2){
+             return 1;
+         }
+         else {
+             return fib(n-1) + fib(n-2);
+         }
+        }
+
+
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -41,6 +68,14 @@ public class NOC_35_PRACTICE_SET {
 
 //        int a = sumr(sc.nextInt());
 //        System.out.println(a);
-pattern1(5);
+//pattern1(5);
+
+
+//
+//        int result = fib(9);
+//        System.out.println(result);
+        pattern1rec(5);
+
+
     }
     }
